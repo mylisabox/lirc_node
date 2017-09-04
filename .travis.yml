@@ -1,4 +1,21 @@
 language: node_js
 node_js:
-  - "0.10"
-  - "0.8"
+- 6
+- 7
+- 8
+notifications:
+  email: false
+  webhooks:
+    urls:
+    - https://webhooks.gitter.im/e/117063f9c1031b17e557
+    on_start: never
+    on_failure: change
+deploy:
+  provider: npm
+  email: hello@mylisabox.com
+  api_key:
+    secure: BqFBxW0RVtqd+HPUIVlfxXlFMmBX7ixrBaRMPtYrvGQeZYXA6CihZTVrKfzFCThRpuqRGY4aEPwNQffeskJW3/MqQ5a8+azuzcLs4P9uSWBgsizvwV/Xnw9NB/8nXCQV3MznMShMMnniicR8vXkIHCIO+4kISIqWQ5TF4HfZP8deifkhm1RXFeKavudEcbvi5Cb2Qfk1HzjWM+kqBSvmSP1xBbdyiDr7jnV9hu06SffozHbF6Q0EdngK1H+EOm6Ltn9ISooxUPNvKAmjB6p0oGF2B2fu1xd4Qog8dyz0xmeS/5zKsa7zy1zZEFsLuRvXjlQD+cJbgNWQAzlr5s33a7COxEsMUWTbmKaB0OAlUR6aLf+cAXrQ4GsVTQkt22309iBgXGjfW5tvN3FGahJA2mPMkpcotCxcEe7pQi27yOwfoyu3u9v5kN9sQ3/+z8+tsAWqzT9eh+qNojnZu7t+gBi1OgADAXbilsnZ5un6lC0elWQauInqrh6nA8WGWtSa9Vt70n8U8GPhlK/MsGKgfWSHrR5OWdbBLyEyg1AAsJHqP74rGL81ABEwtVbi47Ga3zAB9Am+R8WKxT2YNKX4DWkh5/09KF1dsg0eOyr0qBFRxmSV7slYgmX6AxPIWJpOPOdxDuBukcAQIJXw9ijrtfDtldsR7GuEUd+jCycKxyE=
+  on:
+    tags: true
+    repo: mylisabox/lisa-lirc
+    node: 7

@@ -1,6 +1,6 @@
 {
-  "name": "lirc_node",
-  "version": "0.0.4",
+  "name": "lisa-lirc",
+  "version": "0.0.1",
   "description": "Control LIRC from Node",
   "main": "lib/lirc_node.js",
   "scripts": {
@@ -8,10 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/alexbain/lirc_node.git"
+    "url": "git://github.com/mylisabox/lisa-lirc.git"
   },
   "keywords": [
-    "lirc"
+    "lirc",
+    "lisa",
+    "mylisabox"
   ],
   "dependencies": {},
   "devDependencies": {
@@ -29,6 +31,10 @@
     {
       "name": "Wouter Verweirder",
       "email": ""
+    },
+    {
+      "name": "Aumard Jimmy",
+      "email": "jimmy.aumard@gmail.com"
     }
   ]
 }
